@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="tabs">
     <van-tabbar v-model="active" active-color="#b4282d">
       <van-tabbar-item class="iconfont icon-shouye" to='/home'>首页</van-tabbar-item>
       <van-tabbar-item class="iconfont icon-fenlei" to='/list'>分类</van-tabbar-item>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       active: 0
     }
@@ -21,6 +21,9 @@ export default {
 </script>
 
 <style scoped>
+  .tabs{
+    height: 50px;
+  }
   .icon-shouye:before {
     content: "\e606";
     font-size: 18px;

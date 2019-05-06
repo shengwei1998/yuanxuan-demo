@@ -9,7 +9,7 @@
 import Tabs from '../../components/Tabs'
 export default {
   components: {
-    Tabs,
+    Tabs
   }
 }
 </script>
