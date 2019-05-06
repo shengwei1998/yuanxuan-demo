@@ -7,6 +7,7 @@ export default new Router({
   routes: [
     {
       path: '/',
+      component: () => import('./views/home/Index.vue'),
       children: [
         { path: 'home', component: () => import('./views/home/Home.vue') },
         { path: 'list', component: () => import('./views/home/List.vue') },
@@ -15,7 +16,7 @@ export default new Router({
         { path: 'center', component: () => import('./views/home/Center.vue') }
       ]
     },
-    { path: '/detail/:id', component: () => import('./views/detail') },
+    { path: '/detail/:id', component: () => import('./views/detail/detail.vue') },
     { path: '', redirect: '/home' }
   ]
 })
