@@ -1,4 +1,3 @@
 <template>
-  <div>1233</div>
+  <div>list</div>
 </template>
-
