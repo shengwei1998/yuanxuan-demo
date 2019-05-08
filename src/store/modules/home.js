@@ -61,6 +61,18 @@ export default {
           alert(data.message)
         }
       })
+    },
+    getShopList ({ commit }) {
+      axios.get('https://www.littleemmayang.com/api/home/shoppingguide').then(res => {
+        let data = res.data
+        let shopList = data.data.map(item => {
+          return {
+            backgroundUrl: item.styleItem.backgroundUrl,
+            title: item.styleItem.title
+          }
+        })
+        console.log(shopList)
+      })
     }
   }
 }
